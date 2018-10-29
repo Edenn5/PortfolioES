@@ -1,3 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
+
+/* header */
 #masthead {
 	position: fixed;
 	width: 100%;
@@ -8,6 +16,7 @@
 	border-bottom: 2px solid #ccc;
 }
 
+/* general */
 .container {
 	width: 100%
 	max-width: 960px;
@@ -28,16 +37,16 @@ nav a, a {
 	text-decoration: none;
 	border-left: 1px solid gray;
 	font-family: "Arial"
-
 }
 nav: first-child {
 	border-left: 0 none;
 }
+
+/* main */
 #main-container {
 	padding-top: 130px;
 }
 	
-
 .main-section {
 	float: left;
 	width: 100%;
@@ -46,16 +55,9 @@ nav: first-child {
 	margin: 0 0 40px;
 	background: #fff;
 	border: 1px solid #ddd;
-	}
-
-.auth-image {
-	float: left;
-	width: 200px;
-	height: auto;
-	margin-top: 10px;
-	margin-right: 25px;
 }
 
+/* sidebar*/
 .sidebar {
 	float: right;
 	width: 100%;
@@ -80,6 +82,7 @@ h3, .sidebar h2 {
 	margin-right: 5px;
 }
 
+/* portfolio page*/
 .work {
 	position: relative;
 	float: left;
@@ -87,7 +90,44 @@ h3, .sidebar h2 {
 	margin: 20px 0 25px;
 	overflow: auto;
 }
+ .work:nth-child(even) {
+ 	margin-right: 40px;
 
+ }
+
+ .work img {
+ 	width: 100%;
+ 	border: 0 none;
+ 	opacity: 0.8;
+ }
+
+ .work h3 {
+ 	position: absolute;
+ 	bottom: 20px;
+ 	width: 100%;
+ 	padding: 15px;
+ 	margin-bottom: 0;
+ 	font-weight: 300;
+ 	line-height: 30px;
+ 	color: purple;
+ 	text-align: center;
+ 	background: aqua;
+ 	border-bottom: 0: 
+ }
+
+ .auth-image {
+	float: left;
+	width: 200px;
+	height: auto;
+	margin-top: 10px;
+	margin-right: 25px;
+}
+
+
+
+
+
+/* footer */
 footer {
 	padding: 30px 0;
 	clear: both;
